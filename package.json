@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+
+  "scripts": {
+    "dev": "concurrently \"npm:backend\" \"npm:frontend\"",
+    "backend": "cd project-backend && PORT=49153 npm start",
+    "frontend": "cd project-frontend && ./run_frontend.sh 49153 5489"
+  }
+
+}
